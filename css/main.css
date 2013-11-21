@@ -358,7 +358,7 @@ ul {
 .headline {
     width: 66%;
     border: 1px solid red;
-    margin: auto;
+    margin: 15px auto;
 }
 
 .headline h2     {
