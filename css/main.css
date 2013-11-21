@@ -361,20 +361,9 @@ ul {
     margin: 15px auto;
 }
 
-.headline h2     {
-    margin-left: 2%;
-    font-family: 'armwrestlerbold', sans-serif;
+.headline h2 {
+    font-family: sans-serif;
 }
-
-
-
-
-
-
-
-
-
-
 
 /* ==========================================================================
    Helper classes
