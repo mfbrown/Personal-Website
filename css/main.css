@@ -132,11 +132,7 @@ textarea {
 
 /*  REMOVE MARGINS AS ALL GO FULL WIDTH AT 480 PIXELS */
 
-@media only screen and (max-width: 480px) {
-    .col { 
-        margin: 1% 0 1% 0%;
-    }
-}
+
 
 
 /*  GRID OF TWELVE   ============================================================================= */
@@ -187,60 +183,6 @@ textarea {
 
 .span_1_of_12 {
     width: 6.86%; 
-}
-
-
-/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
-
-@media only screen and (max-width: 480px) {
-    .span_12_of_12 {
-        width: 100%; 
-    }
-    .span_11_of_12 {
-        width: 100%; 
-    }
-    .span_10_of_12 {
-        width: 100%; 
-    }
-    .span_9_of_12 {
-        width: 100%; 
-    }
-    .span_8_of_12 {
-        width: 100%; 
-    }
-    .span_7_of_12 {
-        width: 100%; 
-    }
-    .span_6_of_12 {
-        width: 100%; 
-    }
-    .span_5_of_12 {
-        width: 100%; 
-    }
-    .span_4_of_12 {
-        width: 100%; 
-    }
-    .span_3_of_12 {
-        width: 100%; 
-    }
-    .span_2_of_12 {
-        width: 100%; 
-    }
-    .span_1_of_12 {
-        width: 100%; 
-    }
-
-    /* CHANGE MENU TO COLUMN ON SMALL SCREEN DEVICES--------*/
-
-    #title {
-      font-size: 90vw;
-      text-align: center;
-      color: #331300;
-    }
-
-    .site-description {
-        display: none;
-    }
 }
 
 .omega {
@@ -320,6 +262,7 @@ ul {
     width: 95%;
     text-align: justify;
     margin: auto;
+    padding-top: 10px;
 }
 
 #navlist a {
@@ -481,6 +424,62 @@ ul {
        (-webkit-min-device-pixel-ratio: 1.25),
        (min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+
+@media only screen and (max-width: 480px) {
+    .span_12_of_12 {
+        width: 100%; 
+    }
+    .span_11_of_12 {
+        width: 100%; 
+    }
+    .span_10_of_12 {
+        width: 100%; 
+    }
+    .span_9_of_12 {
+        width: 100%; 
+    }
+    .span_8_of_12 {
+        width: 100%; 
+    }
+    .span_7_of_12 {
+        width: 100%; 
+    }
+    .span_6_of_12 {
+        width: 100%; 
+    }
+    .span_5_of_12 {
+        width: 100%; 
+    }
+    .span_4_of_12 {
+        width: 100%; 
+    }
+    .span_3_of_12 {
+        width: 100%; 
+    }
+    .span_2_of_12 {
+        width: 100%; 
+    }
+    .span_1_of_12 {
+        width: 100%; 
+    }
+
+    .col { 
+        margin: 1% 0 1% 0%;
+    }
+
+    .site-description {
+        display: none;
+    }
+
+    #navlist div {
+        width: 100%;
+        text-align: center;
+    }
+
 }
 
 /* ==========================================================================
