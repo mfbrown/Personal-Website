@@ -223,6 +223,14 @@ textarea {
 
 /* BODY STYLES ------------- */
 
+html { 
+  background: url('../img/sky3.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 #responsive_headline {
     text-align: center;
     vertical-align: middle;
@@ -266,6 +274,24 @@ textarea {
     color: black;
     background-color: white;
     border: 1px solid white;
+}
+
+/* ABOUT ME STYLES ----------- */
+
+.about-me {
+    height: 100vh;
+}
+
+.about-container {
+    margin: 2em 0 0 0;
+}
+
+.about-description {
+    width: 90%;
+    color: white;
+    margin: auto;
+    padding: 1em;
+    background-color: rgba(0,0,0,0.5);
 }
 
 /* ==========================================================================
@@ -432,7 +458,12 @@ textarea {
     }
 
     /* STACK LINKS ----------- */
-    
+
+.navlist li {
+    display: block;
+    width: 100%;
+    padding: 0.5em 0;
+}
 
 }
 
