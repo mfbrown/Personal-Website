@@ -212,9 +212,8 @@ textarea {
 }
 
 /*TYPOGRAPHY -------------------------- */
-.headline h1 {
+.headline h2 {
     font-family: 'armwrestlerbold', sans-serif;
-    font-size: 3em;
     color: white;
     margin: 0;
     padding-top: 33vh;
@@ -284,14 +283,64 @@ html {
 
 .about-container {
     margin: 2em 0 0 0;
+    height: 280px;
 }
 
 .about-description {
-    width: 90%;
+    width: 95%;
     color: white;
     margin: auto;
     padding: 1em;
     background-color: rgba(0,0,0,0.5);
+}
+
+.about-description h2 {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.social-menu {
+    color: white;
+    margin: 2em 0 0 0;
+    height: 280px;
+}
+
+.social-links {
+    width: 95%;
+    margin: auto;
+    background-color: rgba(0,0,0,0.5);
+    padding: 1em;
+}
+
+.social-links h2 {
+    margin: 0.5em;
+}
+
+.social-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-links ul li {
+    margin: 0.5em;
+    padding: 0.5em;
+}
+
+.social-list {
+    margin-top: 0.5em;
+}
+
+.social-list li:hover {
+    background-color: rgba(0,0,0,0.7);
+}
+
+.social-links ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+i {
+    margin-right: 5%;
 }
 
 /* ==========================================================================
@@ -412,8 +461,29 @@ html {
     /* Style adjustments for high resolution devices */
 }
 
-/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+/* STACK ABOUT ME PAGE DIVS AT LESS THAN 900PX */
 
+@media only screen and (max-width: 900px) {
+    .about-container {
+        width: 100%;
+    }
+
+    .social-menu {
+        width: 100%;
+    }
+
+    .social-links ul li {
+        display: inline;
+        margin-right: 5%;
+
+    }
+
+    .social-links i {
+        margin-right: 0;
+    }
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
 
 @media only screen and (max-width: 480px) {
     .span_12_of_12 {
@@ -457,13 +527,34 @@ html {
         margin: 1% 0 1% 0%;
     }
 
-    /* STACK LINKS ----------- */
+    /*CENTER MAIN NAV LINKS AND PUT SOME VERTICAL SPACE BETWEEN THEM */
 
-.navlist li {
+    .navlist {
+        width: 95%;
+        margin: auto;
+    }
+
+    .navlist li {
+        display: block;
+        margin: 0.75em 0;
+    }
+
+    /* RETURN SOCIAL MEDIA LINKS TO VERTICAL LIST. CENTER THEM. PUT SPACE BETWEEN THEM FOR TOUCH DEVICES */
+
+    .social-links ul li {
     display: block;
-    width: 100%;
-    padding: 0.5em 0;
-}
+    margin: 1.5em 0;
+    }    
+
+    /* REDUCE FONT SIZE OF DESCRIPTION */
+
+    .description {
+        font-size: 0.75em;
+    }
+
+    .headline {
+        font-size: 2em;
+    }
 
 }
 

@@ -29,7 +29,7 @@
         <!-- Add your site or application content here -->
         <div class="container group">
             <div class="headline col span_12_of_12">
-                <h1 id="responsive_headline">Michael F. Brown</h1>
+                <h2 id="responsive_headline">Michael F. Brown</h2>
             </div>
             <div class="description">
                 <div class="col span_12_of_12">
@@ -48,12 +48,22 @@
 
         <div class="about-me group">
             <a name="about-me"></a>
-            <div class="about-container col span_12_of_12">
+            <div class="about-container col span_9_of_12">
                 <div class="about-description">
                     <h2>About Me</h2>
                     <p>My name is Michael Brown. I’m a Washington, D.C. based web designer and developer in training. Since I have graduated from college and hold down a full-time job, I’m learning through some of the great resources available online. Please visit my profiles on Treehouse, and Codecademy to see my progress on those sites.</p>
 
                     <p>As I develop my skills and start taking on work, I’ll add examples and links on this site. In the meantime, visit my Codepen and read my blog for updates on my progress! If you’d like to get in touch about anything web design related, go ahead and contact me!</p>
+                </div>
+            </div>
+            <div class="social-menu col span_3_of_12">
+                <div class="social-links">
+                    <h2>Social Profiles</h2>
+                    <ul class="social-list">
+                        <li><a href="http://www.linkedin.com/in/mfbrown/"><i class="fa fa-linkedin-square fa-fw fa-2x"></i>LinkedIn</a></li>
+                        <li><a href="https://twitter.com/mfbrown"><i class="fa fa-twitter-square fa-fw fa-2x"></i>Twitter</a></li>
+                        <li><a href="https://www.facebook.com/michaelb1"><i class="fa fa-facebook-square fa-fw fa-2x"></i>Facebook</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -64,7 +74,7 @@
         <script src="js/main.js"></script>
         <script src="jquery.fittext.js"></script>
         <script>
-            jQuery("#responsive_headline").fitText(2);
+            jQuery("#responsive_headline").fitText(1, { minFontSize: '16px', maxFontSize: '72px' });
             jQuery("#responsive_description").fitText(7.5);
         </script>
          <script src="js/vendor/modernizr-2.6.2.min.js"></script>
