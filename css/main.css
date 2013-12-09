@@ -233,6 +233,7 @@ html {
 #responsive_headline {
     text-align: center;
     vertical-align: middle;
+    font-size: 3em;
 }
 
 .description {
@@ -309,7 +310,7 @@ html {
     width: 95%;
     margin: auto;
     background-color: rgba(0,0,0,0.5);
-    padding: 1em;
+    padding: 1em 1em 0.5em 1em;
 }
 
 .social-links h2 {
@@ -339,8 +340,32 @@ html {
     color: white;
 }
 
+/* JUST TESTING THE LINK STYLES */
+.social-links ul a {
+    text-decoration: none;
+    color: white;
+}
+
 i {
     margin-right: 5%;
+}
+
+/*FOOTER STYLES --------------------- */
+.site-footer {
+    height: 3vh;
+    margin-top: 97vh;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.site-footer h6 {
+    text-align: center;
+    color: lightgrey;
+    margin: 0.25em;
+}
+
+.site-footer h6 a {
+    text-decoration: none;
+    color: white;
 }
 
 /* ==========================================================================
@@ -466,6 +491,7 @@ i {
 @media only screen and (max-width: 900px) {
     .about-container {
         width: 100%;
+        height: auto; 
     }
 
     .social-menu {
@@ -481,6 +507,9 @@ i {
     .social-links i {
         margin-right: 0;
     }
+
+    .site-footer {
+    display: none;
 }
 
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
@@ -529,6 +558,10 @@ i {
 
     /*CENTER MAIN NAV LINKS AND PUT SOME VERTICAL SPACE BETWEEN THEM */
 
+    .about-container {
+        height: auto;
+    }
+
     .navlist {
         width: 95%;
         margin: auto;
@@ -541,9 +574,13 @@ i {
 
     /* RETURN SOCIAL MEDIA LINKS TO VERTICAL LIST. CENTER THEM. PUT SPACE BETWEEN THEM FOR TOUCH DEVICES */
 
+    .social-menu {
+        width: 100%;
+    }
+
     .social-links ul li {
     display: block;
-    margin: 1.5em 0;
+    margin-top: .25em;
     }    
 
     /* REDUCE FONT SIZE OF DESCRIPTION */
@@ -552,8 +589,8 @@ i {
         font-size: 0.75em;
     }
 
-    .headline {
-        font-size: 2em;
+    .responsive_headline {
+        font-size: 0.8em;
     }
 
 }
