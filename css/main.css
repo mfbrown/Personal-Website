@@ -300,6 +300,15 @@ html {
     margin-bottom: 0.5em;
 }
 
+.about-description a {
+    text-decoration: none;
+    color: lightgrey;
+}
+
+.about-description a:hover {
+    color: white;
+}
+
 .social-menu {
     color: white;
     margin: 2em 0 0 0;
