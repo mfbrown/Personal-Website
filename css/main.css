@@ -197,6 +197,26 @@ textarea {
 
 /* GLOBAL STYLES -------------- */
 
+html { 
+  background: url('../img/sky3.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+    height: 100%;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+.page-wrap {
+    height: 100%;
+}
+
 
 .container {
     background: #9b53df; /* Old browsers */
@@ -207,32 +227,26 @@ textarea {
     background: -ms-radial-gradient(center, ellipse cover,  #9b53df 38%,#8b29cd 100%); /* IE10+ */
     background: radial-gradient(ellipse at center,  #9b53df 38%,#8b29cd 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9b53df', endColorstr='#8b29cd',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
 }
 
 /*TYPOGRAPHY -------------------------- */
 .headline h2 {
     font-family: 'armwrestlerbold', sans-serif;
     color: white;
-    margin: 0;
-    padding-top: 33vh;
+    margin: 0;    
 }
 
 
 /* BODY STYLES ------------- */
 
-html { 
-  background: url('../img/sky3.jpg') no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
+
+
 
 #responsive_headline {
     text-align: center;
-    vertical-align: middle;
+    padding-top: 15%;
     font-size: 3em;
 }
 
@@ -279,7 +293,7 @@ html {
 /* ABOUT ME STYLES ----------- */
 
 .about-me {
-    height: 100vh;
+    height: 100%;
 }
 
 .about-container {
@@ -361,8 +375,9 @@ i {
 
 /*FOOTER STYLES --------------------- */
 .site-footer {
-    height: 3vh;
-    margin-top: 97vh;
+    height: 3%;
+    width: 100%;
+    margin-top: 50%;
     background-color: rgba(0,0,0,0.5);
 }
 
@@ -579,6 +594,12 @@ i {
     .navlist li {
         display: block;
         margin: 0.75em 0;
+    }
+
+    /* EXTEND CONTAINER TO COVER NAV LINKS */
+
+    .container {
+        height: auto;
     }
 
     /* RETURN SOCIAL MEDIA LINKS TO VERTICAL LIST. CENTER THEM. PUT SPACE BETWEEN THEM FOR TOUCH DEVICES */
